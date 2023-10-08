@@ -1,0 +1,35 @@
+Step-1
+   Create maven project
+ Step-2
+    update pom.xml file--then maven update
+       properties
+       dependencies
+       plug-ins
+       
+Step-3
+    create and update appropriate package and classes in the src/main/java
+    
+step-4
+  build BaseTest with is-a-relationship
+     open browser and application
+     close browser and application
+     take screen shot
+     assertion 
+     
+ step-5--a
+ build PropertiesReader in the utilities package and 
+ create method for each key.
+ 
+ step-5--b
+ build ExcelReader in the utilities package and import poi dependency from maven repository  
+ create method for each data type.
+ build has a relationship with test classes.
+ 
+ step-6
+    develop packages for different pages using page object model style of coding
+    use PagePactoryInitElements class if possible
+ 
+ step-7
+     develop packages for different tests using TestNg model style of coding
+     use BaseTest as a parent test
+     build has-a-relationship with appropriate page
