@@ -12,12 +12,13 @@ public class RegistrationTest extends BaseTest {
 	ExcelReader exReader;
 	String file = "src/test/resources/registration.xlsx";
 	String sheetName = "Sheet1";
-
+	
 	@BeforeMethod
 	public void openFacebook() {
 		openApp();
+	
 	}
-
+	
 	@Test
 	public void createRegistrationTest() {
 		regPage = new Registrationpage(driver);// has a relationship
@@ -25,5 +26,13 @@ public class RegistrationTest extends BaseTest {
 		exReader = new ExcelReader(file, sheetName);
 		String firstName = exReader.getStringCellValue(1, 0);
 		regPage.firstNameMethod(firstName);
+		String lastName = exReader.getStringCellValue(1, 1);
+		regPage.lastNameMethod(lastName);
+		String mobilenumberandemail = exReader.getStringCellValue(1, 3);
+		regPage.mobilenumberandemailMethod(mobilenumberandemail);
+		String mobilenumberandemail1 = exReader.getStringCellValue(1,3);
+		regPage.mobilenumberandemail1Method(mobilenumberandemail1);
+		String password = exReader.getStringCellValue(1,4);
+		regPage.passWordMethod(password);
 	}
 }

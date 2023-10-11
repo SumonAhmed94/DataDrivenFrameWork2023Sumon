@@ -30,5 +30,32 @@ public class Registrationpage {
 		return firstName;
 
 	}
+	@FindBy(how = How.NAME, using = "lastname")
+	private WebElement lastname;
 
+	public WebElement lastNameMethod(String enterYourlastName) {
+		lastname.sendKeys(enterYourlastName);
+		return lastname;
+	}
+	@FindBy(how = How.NAME, using = "reg_email__")
+	private WebElement mobilenumberandemail;
+
+	public WebElement mobilenumberandemailMethod(String enterYourmobilenumberandemail) {
+		mobilenumberandemail.sendKeys(enterYourmobilenumberandemail);
+		return mobilenumberandemail;
+}
+	@FindBy(how = How.NAME, using = "reg_email_confirmation__")
+	private WebElement mobilenumberandemail1;
+
+	public WebElement mobilenumberandemail1Method(String enterYourmobilenumberandemail1) {
+		mobilenumberandemail1.sendKeys(enterYourmobilenumberandemail1);
+		return mobilenumberandemail1;
+}
+	@FindBy(how = How.NAME, using = "reg_passwd__")
+	private WebElement password;
+
+	public WebElement passWordMethod(String enterYourpassword) {
+		password.sendKeys(enterYourpassword);
+		return lastname;
+}
 }
