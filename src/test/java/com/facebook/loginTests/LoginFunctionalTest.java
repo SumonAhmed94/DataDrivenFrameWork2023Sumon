@@ -1,5 +1,6 @@
 package com.facebook.loginTests;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -34,8 +35,9 @@ public class LoginFunctionalTest extends BaseTest {
 	@Test(priority=2)
 	public void loginButtonTest() {
 		lp.loginButton();
+		
 	}
-	//@AfterTest
+	@AfterTest
 	public void closeFacebook() {
 		closeApp();
 		

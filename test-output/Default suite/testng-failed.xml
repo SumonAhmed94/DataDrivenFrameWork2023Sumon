@@ -6,7 +6,7 @@
       <class name="com.facebook.registrationTests.RegistrationTest">
         <methods>
           <include name="openFacebook"/>
-          <include name="createRegistrationTest"/>
+          <include name="faizaRegistrationTest"/>
         </methods>
       </class> <!-- com.facebook.registrationTests.RegistrationTest -->
     </classes>
