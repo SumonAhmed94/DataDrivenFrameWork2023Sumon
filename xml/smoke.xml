@@ -6,11 +6,17 @@
 			<include name="Smoke"/>
 		</run>
 	</groups>
+	
+	<listeners>
+		<listener class-name="com.facebook.listeners.FacebookListener"></listener>
+	</listeners>
+	
   <test name="Login Test">
     <classes>
       <class name="com.facebook.loginTests.LoginTest"/>
     </classes>
   </test> 
+  
   <test name="Registration Test">
     <classes>
       <class name="com.facebook.registrationTests.RegistrationTest"/>

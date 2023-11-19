@@ -1,0 +1,34 @@
+
+Steep-one
+  Right click on the test class
+  convert to TestNG 
+  
+  What is TestNg suites 
+  What is test in TestNG xml file
+  
+  <test thread-count="2" parallel="tests" name="Login Test">
+    <classes>
+      <class name="com.facebook.loginTests.LoginTest"/>
+      <class name="com.facebook.loginTests.LoginFunctionalTest"/>
+    </classes>
+  </test> 
+  
+  what is class in TestNG xml file
+  What is group in TestNg
+  What is para meter in TesTNG
+  what is listener in TestNG
+  what is ITestListener
+  how do you create TestNg xml file from package level
+   Step-1
+    right click on the package
+    convert into TestNG
+   Step-2
+     modify test suite name==Login, test name==Login Test
+     thread-count="2"
+     parallel="tests"
+What is TestNG annotations=before, after, Test
+What is TestNG attributes=priority, grouping, thread count, depends on, para meter
+
+ What is grouping in TestNG
+ how to design Grouping in TestNg
+     

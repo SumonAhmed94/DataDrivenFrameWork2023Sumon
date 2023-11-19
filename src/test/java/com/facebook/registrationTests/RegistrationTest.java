@@ -1,5 +1,7 @@
 package com.facebook.registrationTests;
 
+import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,7 +22,7 @@ public class RegistrationTest extends BaseTest {
 	
 	}
 	
-	@Test(priority=0, groups="Smoke")
+	@Test(priority=0, groups="Smoke")//after @Test (gf) is called attributes
 	public void farukRegistrationTest() {
 		regPage = new Registrationpage(driver);// has a relationship
 		regPage.createNewAccountButton();
@@ -51,6 +53,14 @@ public class RegistrationTest extends BaseTest {
 		regPage.dayDropDownField(exReader.getStringCellValue(2, 6));
 		regPage.yearDropDownField(exReader.getStringCellValue(2, 7));
 		regPage.radioButton(exReader.getStringCellValue(2, 8));
+		String actualTitle="hello";
+		String expectedTitle=driver.getTitle();
+		Assert.assertEquals(actualTitle, expectedTitle);
+		
+	}
+	@Test(priority=2, groups="Regression", dependsOnMethods="fabihaRegistrationTest")
+	public void testSkipped() {
+	//throw new SkipException("Skipping this exception");
 	}
 	
 	@AfterMethod(groups={"Smoke", "Regression"})

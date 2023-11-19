@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.facebook.base.BaseTest;
 import com.facebook.loginPages.LoginPage;
+import com.facebookUtilities.ScreenShot;
 import com.facebookUtilities.PropertiesReader;
 
 public class LoginTest extends BaseTest {// is a relationship
@@ -36,6 +37,14 @@ public void loginTest() {
 	loginpage.usernameMethod(pr.getUserName());
 	loginpage.passWordMethod(pr.getPassword());
 	loginpage.loginButton();
+	try {
+		//LoginPage sc= new LoginPage(driver);
+		ScreenShot sc= new ScreenShot();
+		sc.screenShot("login");
+	} catch (Exception e) {
+	
+		e.printStackTrace();
+	}
 } 
 @Test(priority=1, groups="Regression")
 public void loginTest1() {

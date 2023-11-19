@@ -1,0 +1,24 @@
+Step-1
+   create a listener package==com.facebook.listeners;
+   and a listener class==FacebookListener
+   
+Step-2 implements ITestListener in that class
+==public class FacebookListener implements ITestListener
+Step-3
+  develop appropriate arguments 
+  String methodName=result.getName();
+  System.out.println(methodName+" >>>>>>method started");
+  
+Step-4
+ go to you xml file ==login.xml
+  build a listener
+  == <listeners>
+	<listener class-name="com.facebook.listeners.FacebookListener"></listener>
+  </listeners> 
+  
+  
+  what is listener/ITestListener/TestNG listener==explain ITest listener
+  how do you design listener in your project==4 steps
+  explain me your iTest report==test matrix and run down
+  
+  

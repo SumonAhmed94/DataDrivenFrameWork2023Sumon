@@ -5,8 +5,10 @@
     <classes>
       <class name="com.facebook.registrationTests.RegistrationTest">
         <methods>
+          <include name="testSkipped"/>
           <include name="openFacebook"/>
-          <include name="faizaRegistrationTest"/>
+          <include name="closeFacebook"/>
+          <include name="fabihaRegistrationTest"/>
         </methods>
       </class> <!-- com.facebook.registrationTests.RegistrationTest -->
     </classes>

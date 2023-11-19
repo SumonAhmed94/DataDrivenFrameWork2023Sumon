@@ -1,0 +1,15 @@
+
+How to build Smoke or Regression suite by grouping
+  Step-1
+   make sure Before and After annotations are part of group
+  Step-2
+    group appropriate test part of the Smoke/Regression
+  Step-3
+  in the xml file
+   <groups>  
+      <run>  
+         <include name="Smoke"/>  
+      </run>  
+   </groups>  
+
+   how do you make one test part of multiple groups

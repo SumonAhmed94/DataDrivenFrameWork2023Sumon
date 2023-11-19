@@ -21,9 +21,11 @@ step-4
  create method for each key.
  
  step-5--b
- build ExcelReader in the utilities package and import poi dependency from maven repository  
- create method for each data type.
- build has a relationship with test classes.
+   build ExcelReader in the utilities package and 
+   import poi dependency from maven repository
+   create method for each data types.
+   build has-a-relationship with test classes.
+ 
  
  step-6
     develop packages for different pages using page object model style of coding

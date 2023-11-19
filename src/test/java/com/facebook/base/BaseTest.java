@@ -20,7 +20,7 @@ public class BaseTest { // where we write all the test class
 	//String browser = "Chrome";
 
 	//@BeforeMethod
-	public void openApp() {
+	public WebDriver openApp() {
 		reader= new PropertiesReader();
 		String browser=reader.readBrowser();
 		if (browser.equalsIgnoreCase("Chrome")) {// if, else if, else - is called regular conditional statement
@@ -30,7 +30,7 @@ public class BaseTest { // where we write all the test class
 		} else if (browser.equalsIgnoreCase("Edge") ) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			
+		
 		} else if (browser == "Firefox") {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
@@ -46,6 +46,7 @@ public class BaseTest { // where we write all the test class
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//String url=reader.getQaUrl();
 		driver.get(reader.getQaUrl());
+		return driver;
 
 	}
 
